@@ -7,12 +7,12 @@
 ## m <- makeCacheMatrix()
 ## a <- matrix(c(1,2,3,4), nrow = 2, ncol = 2)
 ## m$set(a)
-## cacheSolve(m)
-## b <- cacheSolve(m)
-## m$set(b)
+## cacheSolve(m)       # inverse of a
+## b <- cacheSolve(m)  # verify the inverse is pulled from the cache
+## m$set(b)            # set x to its inverse
 ## m$get()
-## cacheSolve(m)
-## c <- cacheSolve(m)
+## cacheSolve(m)       # inverse of the inverse of a
+## c <- cacheSolve(m)  # verify the inverse is pulled from the cache
 ## a == c
 
 ## This function provides an encapsulated structure (similar to an object in 
